@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "269144144943",
+    "project_id": "travel-in-laos",
+    "storage_bucket": "travel-in-laos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269144144943:android:124a74b4c7a4b1f3ccdada",
+        "android_client_info": {
+          "package_name": "com.goodev.travel_in_laos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269144144943-6ra5jd6fuq43v143q4d56a6ihu8g834f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDImyvha3TPoEdmPoU6k7VvOKZFiGc_8ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269144144943-6ra5jd6fuq43v143q4d56a6ihu8g834f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
