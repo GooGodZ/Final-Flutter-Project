@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:travel_in_laos/screens/resetpassword.dart';
 import 'package:travel_in_laos/utility/dialog.dart';
 import 'package:travel_in_laos/utility/my_style.dart';
 
@@ -162,6 +163,20 @@ class _AuthenticateState extends State<Authenticate> {
     );
   }
 
+  Container buildResetPassword() {
+    return Container(
+      margin: EdgeInsets.fromLTRB(5.0, 20.0, 5.0, 15.0),
+      child: TextButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => ResetPassword()),
+          );
+        },
+        child: MyStyle().textDark('ລືມລະຫັດຜ່ານ?'),
+      ),
+    );
+  }
+
   Future<Null> loginAuthenticate() async {
     await Firebase.initializeApp().then((value) async {
       await FirebaseAuth.instance
@@ -189,6 +204,7 @@ class _AuthenticateState extends State<Authenticate> {
                 buildEmail(),
                 buildPassword(),
                 buildRowRegisterLogin(),
+                buildResetPassword(),
               ],
             ),
           ),
