@@ -14,6 +14,20 @@ class _RegisterState extends State<Register> {
   bool statusRedEye = true;
   String name, email, password;
 
+  Container buildLogo() {
+    return Container(
+      width: widths * 0.70,
+      child: Column(
+        children: [
+          MyStyle().showLogo(),
+          SizedBox(height: 5.0),
+          MyStyle().titleH1('Travel with Me'),
+          SizedBox(height: 5.0),
+        ],
+      ),
+    );
+  }
+
   Container buildUsername() {
     return Container(
       decoration: BoxDecoration(
@@ -186,6 +200,7 @@ class _RegisterState extends State<Register> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                buildLogo(),
                 buildUsername(),
                 buildEmail(),
                 buildPassword(),
