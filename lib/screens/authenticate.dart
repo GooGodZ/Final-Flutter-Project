@@ -22,7 +22,7 @@ class _AuthenticateState extends State<Authenticate> {
         children: [
           MyStyle().showLogo(),
           SizedBox(height: 5.0),
-          MyStyle().titleH1('Travel in Laos'),
+          MyStyle().titleH1('Travel with Me'),
           SizedBox(height: 5.0),
         ],
       ),
